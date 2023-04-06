@@ -7,7 +7,8 @@
 .now-playing {
 
   .artwork {
-    background-image: src="player.trackAlbum.image";
+    background-image: class(now-playing__image);
+    background-color: var(--colour-background-now-playing);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 120%;
