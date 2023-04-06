@@ -5,18 +5,28 @@
  *
  */
 .now-playing {
-  background-image: img(src="player.trackAlbum.image");
-	background-position: bottom;
-	background-repeat: no-repeat;
-	background-size: 120%;
-	opacity: .95;
-	filter: blur(80px);
-	-webkit-filter: blur(80px);
-	height: 100%;
-	width: 100%;
 
+  .artwork {
+    background-image: src="player.trackAlbum.image";
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    opacity: .5;
+    filter: blur(80px);
+    -webkit-filter: blur(80px);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  .art_image {
+    width: 500px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 2;
+    margin-top: 30px;
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.7);
+  }
  
-
   &__cover,
   &__details {
     padding: var(--spacing-m);
