@@ -5,7 +5,9 @@
  *
  */
 .now-playing {
-  background-image: url('https://i.scdn.co/image/ab67616d0000b27382a45e108688cb14f5255de7');
+  background-image: url('.now-playing__image[src]');
+  background-size: cover;
+  background-position: center;
   background-color: var(--colour-background-now-playing);
   color: var(--color-text-primary);
   display: flex;
